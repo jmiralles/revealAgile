@@ -1,49 +1,148 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/moca.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+
+		<div class="slides">
+			<section>
+				<section>
+					<h2>Aplicación práctica de metodologías ágiles</h2>
+					<img height="250" src="lib/img/logo.jpg" />
+
+					<h4>Caso de estudio: MOCA Platform</h4>
+					<p>
+						<small>
+							Tirso Garcia, Gerardo, Joan
+						</small>
+					</p>
+				</section>
+				<section>
+					<h3>Presentación</h3>
+					<p> <small>Moca platform es una startup que ofrece una herramienta de marketing basada en la localización. Se
+							trata de un
+							modelo B2B, donde el partner integra un SDK en su app que alimenta un dashboard con analíticas, mapas y
+							herramientas para lanzar campañas (notificaciones).</small></p>
+					<img height="250" src="lib/img/maps.png" />
+					<img height="250" src="lib/img/analytics.png" />
+				</section>
+			</section>
+
+			<section data-background="#dddddd">
+				<section>
+					<h2>Actuales <em>roles</em> en MOCA</h2>
+					<img height="250" src="lib/img/cto.jpg" />
+				</section>
+				<section>
+					<h2>CEO</h2>
+					<img height="250" src="lib/img/ceo.png" />
+					<p>Meetings con potenciales partners, conferencias, etc.</p>
+				</section>
+				<section>
+					<h2>CTO</h2>
+					<img height="250" src="lib/img/cto.jpg" />
+					<p>
+						50% tareas que la CEO. El otro 50% dividido entre CTO real y Product Owner
+					</p>
+				</section>
+				<section>
+					<h2>Responsable de Marketing</h2>
+					<img height="250" src="lib/img/marketing.png" />
+					<p><small>No se la tiene muy en cuenta en la creación del producto. Gestiona la imagen que se
+							proyecta de MOCA en la landing. Ayuda a los clientes a usar la herramienta.</small></p>
+				</section>
+				<section>
+					<h2>Ventas</h2>
+					<img height="250" src="lib/img/ventas.png" />
+					<p>
+						Busca partners y acuerdos con posibles clientes.
+					</p>
+				</section>
+				<section>
+					<h2>Dissenyadora gráfica</h2>
+					<img height="250" src="lib/img/diseny.png" />
+					<p>A veces interviene en la UI del producto. Normalmente se ocupa de la landing, videos promocionales, etc.</p>
+				</section>
+				<section>
+					<h2>Front End developer</h2>
+					<img height="250" src="lib/img/front.png" />
+					<p>
+						Se necarga del Front end del dashboard
+					</p>
+				</section>
+				<section>
+					<h2>Backend developer</h2>
+					<img height="250" src="lib/img/backend.png" />
+					<p>Mantiene varias api que consume tanto el dashboard com el sdk</p>
+				</section>
+				<section>
+					<h2>SDK Developer</h2>
+					<img height="250" src="lib/img/sdk.png" />
+					<p>Se encarga del desarollo y mantenimiento del SDK para android y IOS</p>
+				</section>
+				<section>
+					<h2>Client support</h2>
+					<img height="250" src="lib/img/support.png" />
+					<p>
+						Gestiona las relaciones post-venta, quejas, etc.
+					</p>
+				</section>
+			</section>
+
+
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
 </html>
