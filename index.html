@@ -1,455 +1,583 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
 
-    <title>reveal.js</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <link rel="stylesheet" href="css/reveal.css" />
-    <link rel="stylesheet" href="css/theme/moca.css" />
+  <title>reveal.js</title>
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = window.location.search.match(/print-pdf/gi)
-        ? "css/print/pdf.css"
-        : "css/print/paper.css";
-      document.getElementsByTagName("head")[0].appendChild(link);
-    </script>
-  </head>
+  <link rel="stylesheet" href="css/reveal.css" />
+  <link rel="stylesheet" href="css/theme/moca.css" />
 
-  <body>
-    <div class="reveal">
-      <div class="slides">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = window.location.search.match(/print-pdf/gi) ?
+      "css/print/pdf.css" :
+      "css/print/paper.css";
+    document.getElementsByTagName("head")[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-background="#fff">
         <section>
-          <section>
-            <h2>Aplicación práctica de metodologías ágiles</h2>
-            <img height="250" src="lib/img/logo.jpg" />
+          <h2>Aplicación práctica de metodologías ágiles</h2>
+          <img height="250" src="lib/img/logo.jpg" />
 
-            <h4>Caso de estudio: MOCA Platform</h4>
-            <p>
-              <small>
-                Tirso Garcia, Gerardo, Joan
-              </small>
-            </p>
-          </section>
-          <section>
-            <h2>Presentación</h2>
-            <p>
-              <small
-                >Moca platform es una startup que ofrece una herramienta de
-                marketing basada en la localización. Se trata de un modelo B2B,
-                donde el partner integra un SDK en su app que alimenta un
-                dashboard con analíticas, mapas y herramientas para lanzar
-                campañas (notificaciones).</small
-              >
-            </p>
-            <img height="250" src="lib/img/maps.png" />
-            <img height="250" src="lib/img/analytics.png" />
-          </section>
+          <h4>Caso de estudio: MOCA Platform</h4>
+          <p>
+            <small>
+              Tirso Garcia, Gerardo, Joan
+            </small>
+          </p>
         </section>
+        <section>
+          <h2>Presentación</h2>
+          <small>
+            <table>
+              <tr>
+                <td>Startup</td>
+                <td>Dashboard Marketing</td>
+                <td>Localizacion</td>
+              </tr>
+              <tr>
+                <td>B2B (Partners)</td>
+                <td>SDK integrado</td>
+                <td>Mapas y analíticas</td>
+              </tr>
+            </table>
+          </small>
+          <img height="250" src="lib/img/maps.png" />
+          <img height="250" src="lib/img/analytics.png" />
+        </section>
+      </section>
 
-        <section data-background="#dddddd">
-          <section>
-            <h1>Actuales <em>roles</em> en MOCA</h1>
-            <img height="250" src="lib/img/cto.jpg" />
-          </section>
-          <section>
-            <h2>CEO</h2>
-            <img height="250" src="lib/img/ceo.png" />
-            <p>Meetings con potenciales partners, conferencias, etc.</p>
-          </section>
-          <section>
-            <h2>CTO</h2>
-            <img height="250" src="lib/img/cto.jpg" />
-            <p>
-              50% tareas que la CEO. El otro 50% dividido entre CTO real y
-              Product Owner
-            </p>
-          </section>
-          <section>
-            <h2>Responsable de Marketing</h2>
-            <img height="250" src="lib/img/marketing.png" />
-            <p>
-              <small
-                >No se la tiene muy en cuenta en la creación del producto.
-                Gestiona la imagen que se proyecta de MOCA en la landing. Ayuda
-                a los clientes a usar la herramienta.</small
-              >
-            </p>
-          </section>
-          <section>
-            <h2>Ventas</h2>
-            <img height="250" src="lib/img/ventas.png" />
-            <p>
-              Busca partners y acuerdos con posibles clientes.
-            </p>
-          </section>
-          <section>
-            <h2>Dissenyadora gráfica</h2>
-            <img height="250" src="lib/img/diseny.png" />
-            <p>
-              A veces interviene en la UI del producto. Normalmente se ocupa de
-              la landing, videos promocionales, etc.
-            </p>
-          </section>
-          <section>
-            <h2>Front End developer</h2>
-            <img height="250" src="lib/img/front.png" />
-            <p>
-              Se necarga del Front end del dashboard
-            </p>
-          </section>
-          <section>
-            <h2>Backend developer</h2>
-            <img height="250" src="lib/img/backend.png" />
-            <p>Mantiene varias api que consume tanto el dashboard com el sdk</p>
-          </section>
-          <section>
-            <h2>SDK Developer</h2>
-            <img height="250" src="lib/img/sdk.png" />
-            <p>
-              Se encarga del desarollo y mantenimiento del SDK para android y
-              IOS
-            </p>
-          </section>
-          <section>
-            <h2>Client support</h2>
-            <img height="250" src="lib/img/support.png" />
-            <p>
-              Gestiona las relaciones post-venta, quejas, etc.
-            </p>
-          </section>
+      <section data-background="#dddddd">
+        <section>
+          <h2>Actuales <em>roles</em> en MOCA</h2>
+          <img height="150" src="lib/img/cto.jpg" />
+          <img height="150" src="lib/img/ceo.png" />
+          <img height="150" src="lib/img/backend.png" />
+          <img height="150" src="lib/img/front.png" />
+          <img height="150" src="lib/img/marketing.png" />
+
         </section>
-        <section data-background="#345678">
-          <section>
-            <h1>Workflow Actual</h1>
-            <p>
-              Analizamos la manera en que actualmente funciona <em>MOCA</em> a
-              la hora de desarrollar y mejorar el producto.
-            </p>
-            <img src="lib/img/workflow.png" style="border:none;" height="200" />
-          </section>
-          <section>
-            <h2>1. Roadmap</h2>
-            <p>
-              Suele existir un Roadmap de lo que se quiere hacer a lo largo del
-              año.
-            </p>
-          </section>
-          <section>
-            <p>Pero se salta a las primeras de cambio...</p>
-          </section>
-          <section>
-            <h2>2. CTO Inception</h2>
-            <p>
-              El CTO tiene una idea o para cerrar un trato con un nuevo partner
-              llega al acuerdo de crear una nueva funcionalidad.
-            </p>
-            <p>
-              <small
-                >El CTO suele acumular varias funcionalidades nuevas y cuando
-                tiene entre 1-4 suele comunicarse al grupo de dev convocando un
-                meeting (support también está en este meeting).</small
-              >
-            </p>
-          </section>
-          <section>
-            <h2>3. Meeting</h2>
-            <ul>
-              <li>Dura <strong>1 hora</strong> o más</li>
-              <li>
-                Se describe lo que se tiene que hacer a un nivel bastante
-                técnico en una <strong>pizarra</strong>
-              </li>
-              <li>
-                A veces se estima (muy por encima) y se reparten los features en
-                una línea temporal (otras no)
-              </li>
-              <li>Esta pizarra está visible para todos y no se borra</li>
-            </ul>
-            <p>
-              <small
-                >Siempre se estima de forma muy optimista. El CTO a veces impone
-                unos tiempos muy ajustados e irreales
-              </small>
-            </p>
-          </section>
-          <section>
-            <h2>4. JIRA</h2>
-            <ul>
-              <li>El equipo de DEV <em>suele</em> usar la herramienta JIRA</li>
-              <li>
-                El CTO no participa en crear issues ni mantener un backlog
-              </li>
-              <li>
-                No se usa la parte de sprint ya que el tiempo es custom para
-                cada grupo de features
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h2>5. CTO Interruption...</h2>
-            <p>
-              Muchas veces el CTO viene con algo más importante y interrumpe el
-              schedule
-            </p>
-          </section>
-          <section>
-            <h2>6. Desarollo</h2>
-            <p>
-              Cuando un developer ha terminado su desarrollo, se sube
-              normalmente en un entorno de pruebas y support hace un
-              <strong class="fragment">testing manual</strong>
-            </p>
-          </section>
-          <section>
-            <h2>7. Producción</h2>
-            <p>
-              Cuando todo está OK se sube a producción. Si la tarea tiene una
-              representación en Jira se cierra.
-            </p>
-          </section>
+        <section>
+          <h2>CEO</h2>
+          <img height="250" src="lib/img/ceo.png" />
+          <p>Meetings con potenciales partners, conferencias, etc.</p>
         </section>
-        <section data-background="#118125">
-          <section>
-            <h2>Propuesta: Roles</h2>
-            (TODO: Falta contenido)
-          </section>
+        <section>
+          <h2>CTO</h2>
+          <img height="250" src="lib/img/cto.jpg" />
+          <p>
+            50% mismas tareas que la CEO. El otro 50% dividido entre CTO real
+            y Product Owner
+          </p>
         </section>
-        <section data-background="#990256">
-          <section>
-            <h2>Propuesta: Workflow</h2>
-          </section>
-          <section>
-            <h3>Ceremonias SCRUM</h3>
-            <ul>
-              <li>Dailies</li>
-              <li>Sprint Planning</li>
-              <li>Demo</li>
-              <li>Retrospective</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Proceso de análisis</h3>
-            <ul>
-              <li>Creación de las US (backlog)</li>
-              <li>Priorización de las US por el Product Owner</li>
-              <li>Backlog grooming</li>
-              <li>
-                Sprint planning
-                <ul>
-                  <li>Generación de las técnicas task</li>
-                  <li>Puntuacion</li>
-                </ul>
-              </li>
-              <li>Inicio del sprint</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Proceso de Desarollo</h3>
-            <h4>Servidor de CI:</h4>
-            <p>
-              El objetivo es poder generar entregables a partir de las tareas
-              desarrolladas por los diferentes equipos. De forma que QA pueda
-              testear los entregables en el proceso de desarrollo del sprint.
-            </p>
-          </section>
-          <section>
-            <h3>Tres proyectos jenkins</h3>
-            <ul>
-              <li>SERVER pipeline</li>
-              <li>WEB dashboard pipeline</li>
-              <li>MOBILE SDK pipeline</li>
-            </ul>
-            <p>Cada pipeline implica:</p>
-            <p>
-              <small
-                >Descarga desde github, automatic unit test, sonaqube test,
-                NEXUS
-              </small>
-            </p>
-          </section>
-          <section>
-            <h3>Repositorios GIT</h3>
-            <p>
-              <small
-                >El objetivo es tener una estructura de proyectos y ramas para
-                poder hacer CI durante el proceso del sprint</small
-              >
-            </p>
-            <ul>
-              <li>Tres proyectos</li>
-              <li>
-                <ul>
-                  <li>SERVER</li>
-                  <li>Web Dashboard</li>
-                  <li>Mobile SDK</li>
-                </ul>
-              </li>
-              <li>Uso de las ramas (gitflow)</li>
-              <li>
-                <ul>
-                  <li>Dev</li>
-                  <li>Master</li>
-                  <li>
-                    Una rama por US que terminan de dev cuando qa da el ok
-                  </li>
-                  <li>Dev pasa a Master cuando QA da el ok a la release</li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>Estados de la Uer Stories</h3>
-            <ul>
-              <li>TODO</li>
-              <li>IN-PROGRESS</li>
-              <li>
-                RESOLVED(interviene qa, servidor de CI para generar el
-                entregable a testear)
-              </li>
-              <li>DONE(interviene qa, dev mergea a rama de git)</li>
-            </ul>
-            <p>
-              <small
-                >Development, por prioridad va cogiendo tareas en TODO (las pasa
-                a IN-PROGRESS), cuando las finaliza las pasa a RESOLVED</small
-              >
-            </p>
-            <p>
-              <small>
-                Si QA, durante el transcurso del sprint, detecta un bug a una
-                US, asocia dicho bug a la US y pasa al US a TODO. El bug pasa a
-                development y cuando se solucione se vuelve a poner la US en
-                RESOLVED, donde QA la vuelve a testear</small
-              >
-            </p>
-            <p>
-              <small>
-                FINALMENTE, si QA ve una US ok, mueve la US de RESOLVED a
-                DONE.</small
-              >
-            </p>
-          </section>
+        <section>
+          <h2>Responsable de Marketing</h2>
+          <img height="250" src="lib/img/marketing.png" />
+          <p>
+            <small>No se la tiene muy en cuenta en la creación del producto.
+              Gestiona la imagen que se proyecta de MOCA en la landing. Ayuda
+              a los clientes a usar la herramienta.</small>
+          </p>
         </section>
-        <section data-background="#111125">
-          <section>
-            <h2>Ejemplo TEAMS</h2>
-            <p>
-              Vamos a usar un ejemplo de nueva funcionalidad en el dashboard.
-            </p>
-            <p>
+        <section>
+          <h2>Dissenyadora gráfica</h2>
+          <img height="250" src="lib/img/diseny.png" />
+          <p>
+            A veces interviene en la UI del producto. Normalmente se ocupa de
+            la landing, videos promocionales, etc.
+          </p>
+        </section>
+        <section>
+          <h2>Front End developer</h2>
+          <img height="250" src="lib/img/front.png" />
+          <p>
+            Se encarga del Front end del dashboard.
+          </p>
+        </section>
+        <section>
+          <h2>Backend developer</h2>
+          <img height="250" src="lib/img/backend.png" />
+          <p>
+            Mantiene varias api que consume tanto el dashboard com el sdk.
+          </p>
+        </section>
+        <section>
+          <h2>SDK Developer</h2>
+          <img height="250" src="lib/img/sdk.png" />
+          <p>
+            Se encarga del desarrollo y mantenimiento del SDK para android y
+            IOS.
+          </p>
+        </section>
+        <section>
+          <h2>Client support</h2>
+          <img height="250" src="lib/img/support.png" />
+          <p>
+            Gestiona las relaciones post-venta, quejas, etc.
+          </p>
+        </section>
+      </section>
+      <section data-background="#345678">
+        <section>
+          <h2>Workflow Actual</h2>
+          <p>
+            Cómo funciona <em>MOCA</em> a
+            la hora de desarrollar y mejorar su producto
+          </p>
+          <img src="lib/img/workflow.png" style="border:none;" height="200" />
+        </section>
+        <section>
+          <h2>1. Roadmap</h2>
+          <p>
+            Suele existir un Roadmap de lo que se quiere hacer a lo largo del
+            año.
+          </p>
+        </section>
+        <section>
+          <p>Pero se salta a las primeras de cambio...</p>
+        </section>
+        <section>
+          <h2>2. CTO Inception</h2>
+          <p>
+            El CTO tiene una idea o para cerrar un trato con un nuevo partner
+            llega al acuerdo de crear una nueva funcionalidad.
+          </p>
+
+        </section>
+        <section>
+          <h2>3. Meeting</h2>
+          <ul>
+            <li>Dura <strong>1 hora</strong> o más</li>
+            <li>
+              Se describe lo que se tiene que hacer a un nivel bastante
+              técnico en una <strong>pizarra</strong>
+            </li>
+            <li>
+              A veces se estima (muy por encima) y se reparten los features en
+              una línea temporal
+            </li>
+            <li>Esta pizarra está visible para todos y no se borra</li>
+          </ul>
+
+        </section>
+        <section>
+          <h2>4. JIRA</h2>
+          <ul>
+            <li>El team de DEV <em>suele</em> usar la herramienta JIRA</li>
+            <li>
+              El CTO no participa en crear issues ni mantener un backlog
+            </li>
+            <li>
+              No se usa la parte de sprint
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>5. CTO Interruption...</h2>
+          <p>
+            Muchas veces el CTO viene con algo más importante y interrumpe el
+            schedule
+          </p>
+        </section>
+        <section>
+          <h2>6. Desarrollo</h2>
+          <p>
+            Cuando un developer ha terminado su desarrollo, se sube
+            normalmente en un entorno de pruebas y support hace un
+            <strong>testing manual</strong>
+          </p>
+        </section>
+        <section>
+          <h2>7. Producción</h2>
+          <p>
+            Cuando todo está OK se sube a producción. Si la tarea tiene una
+            representación en Jira se cierra.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2>Propuesta AGILE</h2>
+        <h3>Aplicar SCRUM</h3>
+        <h4>Cambios en los Roles</h4>
+        <h4>Cambios en el workflow</h4>
+      </section>
+      <section data-background="#fff">
+        <section>
+          <h2>Cambios en los Roles</h2>
+          <img width="400" src="lib/img/role_changing.png" />
+        </section>
+        <section>
+          <h3>Nuevas incorporaciones</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Rol</th>
+                <th>Responsabilidad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Business Analyst</td>
+                <td>Rol de product owner</td>
+              </tr>
+              <tr>
+                <td>QA</td>
+                <td>Asegurar la calidad del producto</td>
+              </tr>
+              <tr>
+                <td>Fullstack Developer</td>
+                <td>Apoyar cada área de desarrollo cuando sea necesario</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h3>Roles que cambian</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Rol</th>
+                <th>Nueva responsabilidad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CTO</td>
+                <td>Interlocutor BA, CEO y dev team</td>
+              </tr>
+              <tr>
+                <td>Marketing</td>
+                <td>Meetings con el product owner y el CEO </td>
+              </tr>
+              <tr>
+                <td>Front End</td>
+                <td>Diseño del dashboard</td>
+              </tr>
+              <tr>
+                <td>Scrum Master</td>
+                <td>Rol iterante dentro del dev team</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+      <section data-background="#fff">
+        <section>
+          <h2>Cambios en el Workflow</h2>
+          <img width="400" src="lib/img/new_workflow.jpg" />
+        </section>
+        <section>
+          <h3>Ceremonias SCRUM</h3>
+          <ul>
+            <li>Dailies</li>
+            <li>Sprint Planning</li>
+            <li>Demo</li>
+            <li>Retrospective</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Proceso de análisis</h3>
+          <ul>
+            <li>User Stories</li>
+            <li>Priorización de las US por el Product Owner</li>
+            <li>Backlog grooming</li>
+            <li>
+              Sprint planning
+              <ul>
+                <li>Tareas técnicas</li>
+                <li>Puntuacion</li>
+              </ul>
+            </li>
+            <li>Inicio del sprint</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Proceso de Desarrollo</h3>
+          <h4>Servidor de CI</h4>
+          <img src="lib/img/jenkins.png" />
+        </section>
+        <section>
+          <h3>Tres proyectos jenkins</h3>
+          <ul>
+            <li>SERVER pipeline</li>
+            <li>WEB dashboard pipeline</li>
+            <li>MOBILE SDK pipeline</li>
+          </ul>
+          <p>Cada pipeline implica:</p>
+          <p>
+            <small>Descarga desde github, automatic unit test, sonaqube test,
+              NEXUS
+            </small>
+          </p>
+        </section>
+        <section>
+          <h3>Repositorios GIT</h3>
+
+          <p style="text-align: left;">3 proyectos</p>
+          <small>
+            <table>
+              <tr>
+                <td>Backend server</td>
+                <td>Web dashboard</td>
+                <td>Mobile SDK</td>
+              </tr>
+            </table>
+          </small>
+          <p style="text-align: left;">Uso de las ramas (gitflow)</p>
+          <small>
+            <ul style="text-align: left;">
+              <li>Dev</li>
+              <li>Master</li>
+              <li>
+                Una rama por US -> QA da el ok
+              </li>
+              <li>Dev pasa a Master cuando QA da el OK a la release</li>
+            </ul>
+          </small>
+        </section>
+        <section>
+          <h3>Estados de la Uer Stories</h3>
+          <ul>
+            <li>TODO</li>
+            <li>IN-PROGRESS</li>
+            <li>
+              RESOLVED <small>(interviene QA, servidor de CI para generar el
+                entregable a testear)</small>
+            </li>
+            <li>DONE <br> <small>(interviene QA, dev mergea a rama de git)</small></li>
+          </ul>
+        </section>
+      </section>
+      <section data-background="#111125">
+        <section>
+          <h2>Ejemplo: <em>TEAMS</em></h2>
+          <p>
+            Ejemplo de nueva funcionalidad en el DASHBOARD.
+          </p>
+          <p>
+            <small>
               Se trata de poder crear TEAMS, con dos nuevos roles y us permisos:
               ADMIN y USERS.
-            </p>
-          </section>
-          <section>
-            <h3>El PO mantiene el <em>BACKLOG</em></h3>
-
-            <ul>
-              <li>
-                <strong>EPIC-001</strong>: Como usuario quiero poder crear TEAMS
-                y asignar roles con diferentes niveles de acceso
-                <small>
-                  <ul>
-                    <li>
-                      <strong>US-001</strong>: Como usuario quiero poder crear
-                      un TEAM
-                    </li>
-                    <li>
-                      <strong>US-002</strong>: Como usuario quiero poder
-                      registrar a un usuario ADMIN a un team determinado
-                    </li>
-                    <li>
-                      <strong>US-003</strong>: Como ADMIN quiero poder crear un
-                      usuario tipo USER
-                    </li>
-                    <li>
-                      <strong>US-004</strong>: Como ADMIN quiero poder añadir y
-                      eliminar acciones a un determinado USUARIO
-                    </li>
-                    <li>
-                      <strong>US-005</strong>: Como USER/ADMIN quiero poder
-                      hacer login al team
-                    </li>
-                    <li>
-                      <strong>US-006</strong>: Como USER/ADMIN quiero poder ver
-                      mi team dependiendo de las acciones permitidas por el
-                      ADMIN
-                    </li>
-                  </ul>
-                </small>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <img src="lib/img/backlog.png" />
-          </section>
-          <section>
-            <h3>El equipo participa en el <em>SPRINT PLANNING</em></h3>
-            <small>
-              <p>
-                Durante la reunión del Sprint Plannig, dirigida por el Scrum
-                Master, el equipo de desarrollo con el PO y QA (haciendo los
-                tres amigos), debaten técnicamente, hacen subtareas, y puntúan
-                las historias.
-              </p>
-              <p>
-                Finalmente el Product Owner elige las tareas que pasan al
-                sprint, teniendo en cuenta que la capacidad del equipo es de 50
-                story points. La prioridad en este ejemplo, marcada por el
-                Product Owner, viene dada por el orden de la US en la lista.
-              </p>
             </small>
-          </section>
-          <section>
-            <img src="lib/img/sprint_planning.png" />
-          </section>
+          </p>
+          <img width="250" src="lib/img/teams.png" />
         </section>
-      </div>
+        <section>
+          <h3>El PO mantiene el <em>BACKLOG</em></h3>
+
+          <ul>
+            <li>
+              <strong>EPIC-001</strong>: Como usuario quiero poder crear TEAMS
+              y asignar roles con diferentes niveles de acceso
+              <small>
+                <ul>
+                  <li>
+                    <strong>US-001</strong>: Como usuario quiero poder crear
+                    un TEAM
+                  </li>
+                  <li>
+                    <strong>US-002</strong>: Como usuario quiero poder
+                    registrar a un usuario ADMIN a un team determinado
+                  </li>
+                  <li>
+                    <strong>US-003</strong>: Como ADMIN quiero poder crear un
+                    usuario tipo USER
+                  </li>
+                  <li>
+                    <strong>US-004</strong>: Como ADMIN quiero poder añadir y
+                    eliminar acciones a un determinado USUARIO
+                  </li>
+                  <li>
+                    <strong>US-005</strong>: Como USER/ADMIN quiero poder
+                    hacer login al team
+                  </li>
+                  <li>
+                    <strong>US-006</strong>: Como USER/ADMIN quiero poder ver
+                    mi team dependiendo de las acciones permitidas por el
+                    ADMIN
+                  </li>
+                </ul>
+              </small>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <img src="lib/img/backlog.png" />
+        </section>
+        <section>
+          <h3>El equipo participa en el <em>SPRINT PLANNING</em></h3>
+          <ul>
+            <li>Dirigida por el Scrum
+              Master</li>
+            <li>Dev team + PO + QA</li>
+            <li>Debate técnico, subtareas, puntuación</li>
+          </ul>
+          <small>
+            <p>
+              Finalmente el Product Owner elige las tareas que pasan al
+              sprint, teniendo en cuenta que la capacidad del equipo es de 50
+              story points.
+            </p>
+            <p>La prioridad en este ejemplo, marcada por el
+              Product Owner, viene dada por el orden de la US en la lista.</p>
+          </small>
+        </section>
+        <section>
+          <img src="lib/img/sprint_planning.png" />
+        </section>
+        <section>
+          <img src="lib/img/sprint.png" />
+          <img src="lib/img/sprint32.png" />
+
+        </section>
+        <section>
+          <h2>Dailies</h2>
+          <small>
+            <ul>
+              <li>La organiza el Scrum Master</li>
+              <li>Se discute el estado de las tareas </li>
+              <li>SM gestiona bloqueos </li>
+              <li>Reuniones de pie</li>
+              <li>Cada uno expone bloqueos, TODO and DONE</li>
+              <li>Debe ser breve</li>
+            </ul>
+          </small>
+        </section>
+        <section>
+          <h2>DEMO</h2>
+          <small>
+            <ul>
+              <li>Supone todas las tareas en DONE</li>
+              <li>Se entrega Release -> CI -> DEMO</li>
+              <li>SM organiza DEMO para todos</li>
+              <li>Ronda preguntas</li>
+              <li>PO valida el trabajo</li>
+            </ul>
+          </small>
+        </section>
+        <section>
+          <h2>RETRO</h2>
+          <small>
+            <ul>
+              <li>Reunion que organiza el Scrum Master</li>
+              <li>Procedimientos a seguir haciendo</li>
+              <li>Procedimientos a cambiar</li>
+              <li>Tareas para la próxima iteración</li>
+            </ul>
+          </small>
+        </section>
+      </section>
+      <section data-background="#fff">
+        <h2>Conclusiones</h2>
+        <small>
+          <table>
+            <thead>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="50%">Menos caos del workflow anterior
+                </td>
+                <td>Algunos roles van a tener menos tiempo para sus antiguas tareas.
+                </td>
+              </tr>
+              <tr>
+                <td>Conocer Velocidad del equipo
+                </td>
+                <td>Se necesita un periodo de adaptación.
+                </td>
+              </tr>
+              <tr>
+                <td>Predecir Roadmap
+                </td>
+                <td>Conlleva nuevas incorporaciones: QA (puede ser el support), un Scrum Master y un desarrollador
+                  extra.
+                </td>
+              </tr>
+              <tr>
+                <td>Subidas seguras y al final del sprint
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td>No se desperdicia tanto tiempo
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td>Se evítan burnouts
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td>repartir carga con nuevo fullstack
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td>- riesgos + adaptabilidad
+                </td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </small>
+      </section>
     </div>
+  </div>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
 
-    <script>
-      // More info about config & dependencies:
-      // - https://github.com/hakimel/reveal.js#configuration
-      // - https://github.com/hakimel/reveal.js#dependencies
-      Reveal.initialize({
-        dependencies: [
-          {
-            src: "plugin/markdown/marked.js"
-          },
-          {
-            src: "plugin/markdown/markdown.js"
-          },
-          {
-            src: "plugin/notes/notes.js",
-            async: true
-          },
-          {
-            src: "plugin/highlight/highlight.js",
-            async: true,
-            callback: function() {
-              hljs.initHighlightingOnLoad();
-            }
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [{
+          src: "plugin/markdown/marked.js"
+        },
+        {
+          src: "plugin/markdown/markdown.js"
+        },
+        {
+          src: "plugin/notes/notes.js",
+          async: true
+        },
+        {
+          src: "plugin/highlight/highlight.js",
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
           }
-        ]
-      });
-    </script>
-  </body>
+        }
+      ]
+    });
+  </script>
+</body>
+
 </html>
